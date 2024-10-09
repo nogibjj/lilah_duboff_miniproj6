@@ -27,12 +27,8 @@ def transform(data1, data2):
         access_token=access_token,
     ) as connection:
         c = connection.cursor()
-        # INSERT TAKES TOO LONG
-        # c.execute("DROP TABLE IF EXISTS births2000DB")
-        c.execute("SHOW TABLES FROM [default] LIKE '[table name]'")
+        c.execute("SHOW TABLES FROM remotehealthdb LIKE 'remote_health*'")
         result = c.fetchall()
-        # takes too long so not dropping anymore
-        # c.execute("DROP TABLE IF EXISTS births1994DB")
         if not result:
             c.execute(
                 """
@@ -60,11 +56,9 @@ def transform(data1, data2):
                             )
                         """
             )
-    # insert
-    c.executemany(
-        """INSERT INTO remote_health1 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-        payload1,
-    )
+        for _, row in payload1.iterrows():
+            convert = (_,) + tuple(row)
+            c.execute(f"INSERT INTO remotehealthdb VALUES {convert}")
     print(payload1)
 
     if not result:
@@ -94,12 +88,11 @@ def transform(data1, data2):
                             )
                         """
         )
-    c.executemany(
-        """INSERT INTO remote_health2 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-        payload2,
-    )
+        for _, row in payload2.iterrows():
+            convert = (_,) + tuple(row)
+            c.execute(f"INSERT INTO remotehealthdb VALUES {convert}")
+        c.execute("SHOW TABLES FROM remotehealthdb LIKE 'remote_health*'"),
     c.commit()
     c.close()
     print(payload2)
-
     return payload1, payload2
