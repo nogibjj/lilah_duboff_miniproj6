@@ -27,7 +27,7 @@ def transform(data1, data2):
         access_token=access_token,
     ) as connection:
         c = connection.cursor()
-        c.execute("SHOW TABLES FROM remotehealthdb LIKE 'remote_health*'")
+        c.execute("SHOW TABLES FROM default LIKE 'remote_health*'")
         result = c.fetchall()
         if not result:
             c.execute(
@@ -58,9 +58,10 @@ def transform(data1, data2):
             )
         for _, row in payload1.iterrows():
             convert = (_,) + tuple(row)
-            c.execute(f"INSERT INTO remotehealthdb VALUES {convert}")
+            c.execute(f"INSERT INTO remote_health1 VALUES {convert}")
     print(payload1)
-
+    c.execute("SHOW TABLES FROM default LIKE 'remote_health*'")
+    result = c.fetchall()
     if not result:
         c.execute(
             """
@@ -90,8 +91,8 @@ def transform(data1, data2):
         )
         for _, row in payload2.iterrows():
             convert = (_,) + tuple(row)
-            c.execute(f"INSERT INTO remotehealthdb VALUES {convert}")
-        c.execute("SHOW TABLES FROM remotehealthdb LIKE 'remote_health*'"),
+            c.execute(f"INSERT INTO remote_health2 VALUES {convert}")
+        c.execute("SHOW TABLES FROM default LIKE 'remote_health*'"),
     c.commit()
     c.close()
     print(payload2)
