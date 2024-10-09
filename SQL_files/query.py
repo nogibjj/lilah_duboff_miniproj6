@@ -1,13 +1,15 @@
 import sqlite3
+import os
+from databricks import sql
+from dotenv import load_dotenv
 
-
-def create(payload, data, table):
+def create(payload1, data1, table1):
     """Create and insert into table"""
-    conn = sqlite3.connect(data)
+    conn = sqlite3.connect(data1)
     c = conn.cursor()
     c.execute(
         f"""
-              CREATE TABLE IF NOT EXISTS {table} (
+              CREATE TABLE IF NOT EXISTS {table1} (
                     Employee_ID,
                     Gender, 
                     Age,
@@ -32,8 +34,8 @@ def create(payload, data, table):
               """
     )
 
-    query = f"INSERT INTO {table} VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
-    c.execute(query, payload)
+    query = f"INSERT INTO {table1} VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+    c.execute(query, payload1)
 
     conn.commit()
     conn.close()
@@ -43,12 +45,12 @@ def create(payload, data, table):
 
 
 
-def read(data, table):
+def read(data1, table1):
     """Read data from the table"""
-    conn = sqlite3.connect(data)
+    conn = sqlite3.connect(data1)
     c = conn.cursor()
     
-    query = f"SELECT * FROM {table} LIMIT 10"
+    query = f"SELECT * FROM {table1} LIMIT 10"
     c.execute(query)
 
     read_result = c.fetchall()
@@ -57,11 +59,11 @@ def read(data, table):
     return read_result
 
 
-def update(data, table, column, new_value, ID_number):
+def update(data, table1, column, new_value, ID_number):
     """Update a specific column in a row based on Employee_ID"""
     conn = sqlite3.connect(data)
     c = conn.cursor()
-    query = f"UPDATE {table} SET {column} = ? WHERE Employee_ID = ?"
+    query = f"UPDATE {table1} SET {column} = ? WHERE Employee_ID = ?"
     c.execute(query, (new_value, ID_number))
     affected_rows = c.rowcount
     conn.commit()
@@ -75,11 +77,11 @@ def update(data, table, column, new_value, ID_number):
     return "Record updated successfully!"
 
 
-def delete(database, table, ID_number):
+def delete(database1, table1, ID_number):
     """Delete a specific column in a row based on Employee_ID"""
-    conn = sqlite3.connect(database)
+    conn = sqlite3.connect(database1)
     c = conn.cursor()
-    query = f"DELETE FROM {table} WHERE Employee_ID = ?"
+    query = f"DELETE FROM {table1} WHERE Employee_ID = ?"
     c.execute(query, (ID_number,))
     changed_rows = c.rowcount
     conn.commit()

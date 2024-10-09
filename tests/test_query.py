@@ -3,7 +3,7 @@ and if the CRUD operations returned a result"""
 
 from SQL_files.query import create, read, update, delete, query_1, query_2
 
-payload = (
+payload1 = (
     "EMP0001",
     32,
     "Non-binary",
@@ -30,7 +30,7 @@ payload = (
 def test_create():
     table_name = "remote_health"
     data = "remotehealthDB.db"
-    result = create(payload, data, table_name)
+    result = create(payload1, data, table_name)
     assert result == "Record inserted successfully"
 
 
