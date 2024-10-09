@@ -1,4 +1,4 @@
-from hello import product
+from main import product
 
 
 def test_product():
