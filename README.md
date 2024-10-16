@@ -1,21 +1,19 @@
-[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_miniproj5/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_miniproj5/actions/workflows/main.yml)
+
 
 
 # Python Script interacting with SQL Database
-#### This project imports a csv dataset, converts it to a database, and performs CRUD operations to analyze data
+#### The purpose of this project is to perform ETL functions on a csv file, connect to an external database (databricks), and perform a complex query that includes joins, aggregation, and sorting
 
 #### Requirements:
 
-- [X] Connect to a SQL database
-- [X] Perform CRUD operations
-- [X] Write at least two different SQL queries
-- [X] Database connection
+- [X] Connect to a SQL database in databricks
+- [X] Design a complex SQL query involving joins, aggregation, and sorting
+- [X] Provide an explanation for what the query is doing and the expected results
 - [X] CI/CD pipeline
-- [X] Test each operation works by loading the .db file into your pipeline 
+- [X] Written or video explanation of the query
 - [X] README.md
-- [X] Screenshot or log of successful database operations
-- [X] Arch Diagram
-- [X] CLI - BONUS 
+- [X] Potentially use CLI
+
 
 ---
 ### Folder Navigation
@@ -29,23 +27,22 @@
         - workflows
             - main.yml
     - data
-        - data csv file (optional to import into the folder, could use URL)
+        - Table 1 csv file
+        - Table 2 csv file
     - SQL_files
+        - complex_query.py
         - extract.py
-        - query.py
         - transform.py
     - tests
         - test_extract.py
         - test_query.py
         - test_transform.py
-    - ETL with SQLite.png (ETL diagram)
     - main.py
     - Makefile
-    - passing_test_functions.png (screenshot of make test results)
-    - queries.png (screenshot of query results)
+    - query_log.md (markdown that logs all queries made)
     - README.md
-    - remotehealthDB.db (database created from csv)
     - requirements.txt
+    - test_main.py
 ---
 ### Workflow Summary and Explanation
 ##### This project contains the following dependencies:
@@ -55,12 +52,32 @@
 - ruff == 0.0.284
 - fire == 0.7.0
 - requests == 2.32.3
+- pandas == 2.2.2
+- python-dotenv == 1.0.1
+- databricks-sql-connector == 3.4.0
 ---
-### Arch Diagram and Explanation
-##### The following diagram displays the map of how ETL processes work in SQLite. [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query For the ETL-Query lab
+### What is the Purpose of this Project?
+##### The purpise of this project is to perform and ETL and a complex query by connecting to an external database. To set up data for the join, I downloaded a public dataset from Kaggle, that collected information about remote work and its impacts on mental health conditions and stress levels. I split this data into two separate files, one with demographics and job information, and one with the health statistics collected. The data was then passed as a url through an extract function to return two file paths. 
 
+##### Next, a connection with the databricks warehouse was established, and the data was transformed/cleaned and loaded as two tables (remote_health1 and remote_health2) into the database. 
 
----
-### Query Results
-##### This screenshot displays the terminal results from the two query functions. The first query returns the first five rows of the table, and the second query returns a few rows that contain the highest number or hours worked per week. In this case, many rows contained 60hrs, which was the highest from the table, so I limited the query to return five results. In addition, we are only looking at the job title, industry, number of hours worked, stress level, and mental health condition.
+##### Finally, after the tables are successfully loaded into the database, any type of query can be performed to explore the data. 
+
+___
+### What is the Goal of the Query?
+##### In this project, the complex query I ran can be seen in the query_log.md file, or in the screenshot below. I first took the count of how many employees were in the dataset, then found the average number of hours worked per week overall. From there, I found the average number of hours worked per week, grouped by stress level(Low, Medium, or High). Then, I joined the two tables together using an automatic inner merge, where the Employee ID number of Table 1 matched that of Table 2. Finally, I grouped it by industry, and then ordered the data by the Employee ID number in descending order.
+
+##### Query (Reformatted from the makefile):
+![alt text](query_image.png)
+
+##### Result:
+![alt text](query_result.png)
+
+### Integrating CLI Tools 
+##### To make this project accessible from the terminal, I created a Command Line Tool (CLI) to be able to run the project with simple commands. In the main.py file, I utilized the argparse package to create the CLI, which lets the user choose between three actions: "extract," "transform," and "complex_query." The arguments function parses the CLI arguments, with the "complex_query" action requiring an additional query argument. This is where you would input any query of your choice into the makefile. The main function executes the appropriate action based on the user's input: extracting data, transforming data, or running a complex query. Depending on the action, it calls specific functions (extract_data, transform_1, transform_2, complex_query). Finally, the script runs the main function if executed as the main module
+___
+### Arch Diagram 
+##### The following diagram displays the map of how ETL processes work. [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query For the ETL-Query lab
+![alt text](<ETL_diagram copy.png>)
+
 

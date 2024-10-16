@@ -1,8 +1,80 @@
-from main import product
+"""
+Test goes here
+
+"""
+
+# from SQL_files.extract import extract_data
+# from SQL_files.transform import transform_1, transform_2
+# from SQL_files.complex_query import complex_query
+import subprocess
 
 
-def test_product():
-    assert product(5, 2) == 10
-    assert product(-8, -1) == 8
-    assert product(0, 1) == 0
-    assert product(4, -5) == -20
+def test_extract_data():
+    """tests extract()"""
+    result = subprocess.run(
+        ["python", "main.py", "extract"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    assert result.returncode == 0
+    assert "Extracting data..." in result.stdout
+
+
+def test_transform_1():
+    """tests transfrom_load"""
+    result = subprocess.run(
+        ["python", "main.py", "transform"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    assert result.returncode == 0
+    assert result == "Success!"
+
+
+def test_transform_2():
+    """tests transfrom_load"""
+    result = subprocess.run(
+        ["python", "main.py", "transform"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    assert result.returncode == 0
+    assert result == "Success!"
+
+
+def test_complex_query():
+    """tests general_query"""
+    result = subprocess.run(
+        [
+            "python",
+            "main.py",
+            "complex_query",
+            """
+                SELECT r1.Industry, COUNT(r1.Employee_ID) AS count_of_employees, 
+                AVG(r1.Hours_Worked_Per_Week) AS avg_hours_worked, 
+                AVG(CASE WHEN r2.Stress_Level = 'High' 
+                THEN 1 WHEN r2.Stress_Level = 'Medium' 
+                THEN 2 WHEN r2.Stress_Level = 'Low' 
+                THEN 3 ELSE NULL END) AS avg_stress_level 
+                FROM remote_health1 AS r1 
+                JOIN remote_health2 AS r2 ON r1.Employee_ID = r2.Employee_ID 
+                GROUP BY r1.Industry 
+                ORDER BY count_of_employees DESC;
+            """,
+        ],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    # assert result.returncode == 0
+    assert result == "Successfully completed query!"
+
+
+if __name__ == "__main__":
+    test_extract_data()
+    test_transform_1()
+    test_transform_2()
+    test_complex_query()
