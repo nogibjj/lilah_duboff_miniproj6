@@ -13,8 +13,8 @@ from SQL_files.complex_query import complex_query
 
 url1 = "https://raw.githubusercontent.com/lilah-duboff/data-for-URLS/refs/heads/main/table_1_remote_work_mental_health_data.csv"
 url2 = "https://raw.githubusercontent.com/lilah-duboff/data-for-URLS/refs/heads/main/table_2_remote_work_mental_health_data.csv"
-path1 = "./data/table_1_remote_work_mental_health_data.csv"
-path2 = "./data/table_2_remote_work_mental_health_data.csv"
+path1 = "data/table_1_remote_work_mental_health_data.csv"
+path2 = "data/table_2_remote_work_mental_health_data.csv"
 folder = "data"
 
 
