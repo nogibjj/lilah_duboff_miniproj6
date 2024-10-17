@@ -73,6 +73,19 @@ ___
 ##### Result:
 ![alt text](query_result.png)
 
+##### Table of Results
+|   Industry    | Count of Employees | Average Hours Worked | Average Stress Level |
+|---------------|--------------------|----------------------|----------------------|
+| IT            |         20         |        40.65         |         2.15         |
+| Healthcare    |         17         |        35.65         |         2.06         |
+| Consulting    |         16         |        35.13         |         1.88         |
+| Manufacturing |         12         |        43.92         |          2.0         |
+| Education     |         12         |        40.33         |         1.67         |
+| Retail        |         12         |        38.83         |         1.83         |
+| Finance       |         11         |        41.27         |         2.09         |
+
+##### This table displays the results in a more visual way, grouped by industry. We are able to directly compare the number of employees in each industry, the average hours worked per week, and the average stress level reported (1=low, 3=high).
+
 ### Integrating CLI Tools 
 ##### To make this project accessible from the terminal, I created a Command Line Tool (CLI) to be able to run the project with simple commands. In the main.py file, I utilized the argparse package to create the CLI, which lets the user choose between three actions: "extract," "transform," and "complex_query." The arguments function parses the CLI arguments, with the "complex_query" action requiring an additional query argument. This is where you would input any query of your choice into the makefile. The main function executes the appropriate action based on the user's input: extracting data, transforming data, or running a complex query. Depending on the action, it calls specific functions (extract_data, transform_1, transform_2, complex_query). Finally, the script runs the main function if executed as the main module.
 ___
