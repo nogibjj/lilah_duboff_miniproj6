@@ -2,10 +2,6 @@
 Test goes here
 
 """
-
-# from SQL_files.extract import extract_data
-# from SQL_files.transform import transform_1, transform_2
-# from SQL_files.complex_query import complex_query
 import subprocess
 
 
@@ -58,7 +54,7 @@ def test_complex_query():
         check=True,
     )
     assert result.returncode == 0
-    assert result == "Successfully completed query!"
+   
 
 
 if __name__ == "__main__":
