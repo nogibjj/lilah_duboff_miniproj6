@@ -1,0 +1,101 @@
+﻿Employee_ID,Age,Gender,Job_Role,Industry,Years_of_Experience,Work_Location,Hours_Worked_Per_Week,Number_of_Virtual_Meetings,Work_Life_Balance_Rating
+EMP0001,32,Non-binary,HR,Healthcare,13,Hybrid,47,7,2
+EMP0002,40,Female,Data Scientist,IT,3,Remote,52,4,1
+EMP0003,59,Non-binary,Software Engineer,Education,22,Hybrid,46,11,5
+EMP0004,27,Male,Software Engineer,Finance,20,Onsite,32,8,4
+EMP0005,49,Male,Sales,Consulting,32,Onsite,35,12,2
+EMP0006,59,Non-binary,Sales,IT,31,Hybrid,39,3,4
+EMP0007,31,Prefer not to say,Sales,IT,24,Remote,51,7,3
+EMP0008,42,Non-binary,Data Scientist,Manufacturing,6,Onsite,54,7,3
+EMP0009,56,Prefer not to say,Data Scientist,Healthcare,9,Hybrid,24,4,2
+EMP0010,30,Female,HR,IT,28,Hybrid,57,6,1
+EMP0011,33,Non-binary,Software Engineer,Finance,17,Remote,48,3,3
+EMP0012,47,Female,Marketing,Consulting,31,Hybrid,26,12,4
+EMP0013,40,Female,Marketing,Consulting,1,Remote,21,7,2
+EMP0014,51,Non-binary,Designer,Manufacturing,5,Hybrid,45,13,1
+EMP0015,36,Prefer not to say,Project Manager,Retail,23,Remote,59,11,3
+EMP0016,56,Female,Sales,Healthcare,13,Remote,44,11,4
+EMP0017,33,Prefer not to say,HR,Education,3,Onsite,52,9,2
+EMP0018,45,Non-binary,Data Scientist,Consulting,20,Onsite,37,8,3
+EMP0019,49,Non-binary,Software Engineer,IT,30,Remote,36,6,1
+EMP0020,59,Male,Software Engineer,Consulting,13,Remote,59,4,3
+EMP0021,26,Female,Sales,Retail,33,Hybrid,21,1,2
+EMP0022,26,Non-binary,Sales,Education,21,Onsite,54,12,3
+EMP0023,43,Prefer not to say,Sales,Finance,21,Onsite,57,1,3
+EMP0024,53,Non-binary,Marketing,Consulting,11,Onsite,22,12,5
+EMP0025,56,Male,Sales,Finance,6,Remote,54,15,3
+EMP0026,49,Male,Project Manager,Healthcare,23,Onsite,21,14,4
+EMP0027,36,Non-binary,Project Manager,Retail,30,Onsite,24,12,3
+EMP0028,53,Female,Project Manager,Retail,31,Onsite,56,4,4
+EMP0029,47,Prefer not to say,Sales,IT,22,Onsite,33,10,3
+EMP0030,59,Male,Software Engineer,Healthcare,34,Remote,25,15,2
+EMP0031,22,Female,Data Scientist,IT,22,Onsite,20,11,1
+EMP0032,37,Prefer not to say,Marketing,Manufacturing,4,Hybrid,33,14,2
+EMP0033,45,Prefer not to say,Project Manager,Manufacturing,29,Remote,20,14,2
+EMP0034,48,Male,Software Engineer,Healthcare,27,Remote,26,9,3
+EMP0035,36,Male,Designer,IT,24,Hybrid,22,6,4
+EMP0036,46,Prefer not to say,Sales,Healthcare,28,Hybrid,57,8,4
+EMP0037,48,Male,Sales,Finance,10,Onsite,30,12,1
+EMP0038,31,Female,Designer,Healthcare,18,Remote,47,14,2
+EMP0039,24,Non-binary,Sales,IT,21,Onsite,48,12,4
+EMP0040,49,Male,Marketing,Consulting,20,Hybrid,20,1,3
+EMP0041,30,Non-binary,Data Scientist,IT,22,Remote,44,15,4
+EMP0042,53,Male,Project Manager,IT,14,Onsite,29,13,2
+EMP0043,54,Prefer not to say,Project Manager,Finance,26,Remote,58,6,3
+EMP0044,54,Female,Designer,Manufacturing,12,Remote,53,12,4
+EMP0045,57,Prefer not to say,HR,Retail,13,Remote,23,6,3
+EMP0046,32,Male,Marketing,Retail,24,Remote,42,8,2
+EMP0047,33,Male,Data Scientist,Education,33,Remote,35,15,1
+EMP0048,30,Female,Sales,Consulting,4,Remote,39,2,5
+EMP0049,22,Female,HR,Healthcare,7,Onsite,29,9,4
+EMP0050,35,Male,Project Manager,Retail,11,Onsite,37,3,4
+EMP0051,26,Non-binary,HR,Manufacturing,34,Onsite,28,10,4
+EMP0052,47,Male,Sales,Consulting,25,Remote,31,9,5
+EMP0053,42,Female,Software Engineer,Retail,3,Onsite,26,14,3
+EMP0054,60,Prefer not to say,Project Manager,Healthcare,34,Onsite,46,15,2
+EMP0055,26,Female,Software Engineer,Education,5,Hybrid,55,6,1
+EMP0056,30,Non-binary,Project Manager,Education,8,Hybrid,47,12,3
+EMP0057,42,Male,Software Engineer,IT,14,Remote,48,13,5
+EMP0058,53,Prefer not to say,HR,IT,7,Onsite,49,6,5
+EMP0059,26,Prefer not to say,Designer,Manufacturing,31,Remote,51,4,1
+EMP0060,26,Prefer not to say,Data Scientist,IT,17,Remote,57,13,2
+EMP0061,25,Non-binary,Sales,Consulting,4,Hybrid,33,14,4
+EMP0062,33,Female,Sales,IT,14,Remote,30,15,2
+EMP0063,25,Non-binary,Project Manager,Finance,20,Hybrid,28,4,3
+EMP0064,22,Female,Software Engineer,Healthcare,5,Onsite,31,15,3
+EMP0065,60,Prefer not to say,Data Scientist,Healthcare,18,Hybrid,37,0,4
+EMP0066,56,Male,HR,Finance,9,Remote,31,3,4
+EMP0067,45,Non-binary,Software Engineer,IT,6,Hybrid,46,3,1
+EMP0068,60,Female,Marketing,Education,32,Remote,20,6,2
+EMP0069,32,Female,Designer,Manufacturing,23,Onsite,51,8,2
+EMP0070,25,Female,Marketing,Finance,6,Remote,28,13,2
+EMP0071,43,Prefer not to say,Marketing,Consulting,23,Onsite,39,4,4
+EMP0072,50,Prefer not to say,Designer,Consulting,25,Remote,29,13,1
+EMP0073,28,Prefer not to say,Designer,Retail,15,Onsite,30,14,5
+EMP0074,23,Non-binary,Software Engineer,IT,29,Hybrid,53,7,3
+EMP0075,38,Prefer not to say,Project Manager,Consulting,35,Onsite,57,10,2
+EMP0076,42,Male,Marketing,Retail,27,Onsite,49,3,5
+EMP0077,31,Non-binary,HR,Consulting,4,Onsite,55,8,4
+EMP0078,28,Female,Marketing,Healthcare,25,Remote,37,10,5
+EMP0079,29,Male,Data Scientist,Manufacturing,15,Remote,51,5,2
+EMP0080,27,Male,Project Manager,Consulting,21,Hybrid,21,7,5
+EMP0081,54,Female,Data Scientist,Education,5,Hybrid,21,10,3
+EMP0082,42,Non-binary,Software Engineer,Finance,33,Onsite,44,9,4
+EMP0083,58,Prefer not to say,HR,Education,32,Hybrid,26,10,3
+EMP0084,26,Female,Project Manager,Healthcare,15,Hybrid,43,6,4
+EMP0085,56,Male,Designer,Retail,9,Hybrid,42,14,4
+EMP0086,50,Male,Designer,Finance,20,Hybrid,44,8,4
+EMP0087,55,Prefer not to say,Project Manager,Manufacturing,10,Onsite,27,0,1
+EMP0088,22,Prefer not to say,Data Scientist,Education,26,Hybrid,43,5,1
+EMP0089,24,Female,Designer,Consulting,11,Remote,38,0,5
+EMP0090,53,Prefer not to say,Marketing,Healthcare,23,Hybrid,38,4,4
+EMP0091,57,Female,Data Scientist,Retail,2,Onsite,57,4,4
+EMP0092,22,Female,Software Engineer,Manufacturing,9,Onsite,60,3,1
+EMP0093,41,Male,Data Scientist,IT,31,Onsite,29,0,5
+EMP0094,46,Non-binary,Data Scientist,Education,34,Remote,54,12,4
+EMP0095,60,Non-binary,Project Manager,Education,11,Onsite,31,11,5
+EMP0096,44,Female,Project Manager,Manufacturing,2,Remote,54,8,5
+EMP0097,35,Male,Data Scientist,Healthcare,31,Hybrid,33,11,1
+EMP0098,48,Male,Designer,IT,32,Hybrid,25,1,4
+EMP0099,31,Prefer not to say,Data Scientist,Healthcare,19,Onsite,21,15,1
+EMP0100,53,Male,Project Manager,IT,12,Hybrid,45,10,2

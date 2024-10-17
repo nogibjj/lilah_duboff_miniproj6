@@ -21,8 +21,8 @@ def test_extract_data():
     assert "Extracting data..." in result.stdout
 
 
-def test_transform_1():
-    """tests transfrom_load"""
+def test_transform():
+    """tests transfrom"""
     result = subprocess.run(
         ["python", "main.py", "transform"],
         capture_output=True,
@@ -30,19 +30,7 @@ def test_transform_1():
         check=True,
     )
     assert result.returncode == 0
-    assert result == "Success!"
-
-
-def test_transform_2():
-    """tests transfrom_load"""
-    result = subprocess.run(
-        ["python", "main.py", "transform"],
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-    assert result.returncode == 0
-    assert result == "Success!"
+    assert "Transforming data..." in result.stdout
 
 
 def test_complex_query():
@@ -69,12 +57,11 @@ def test_complex_query():
         text=True,
         check=True,
     )
-    # assert result.returncode == 0
+    assert result.returncode == 0
     assert result == "Successfully completed query!"
 
 
 if __name__ == "__main__":
     test_extract_data()
-    test_transform_1()
-    test_transform_2()
+    test_transform()
     test_complex_query()

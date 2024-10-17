@@ -1,0 +1,101 @@
+﻿Employee_ID,Stress_Level,Mental_Health_Condition,Access_to_Mental_Health_Resources,Productivity_Change,Social_Isolation_Rating,Satisfaction_with_Remote_Work,Company_Support_for_Remote_Work,Physical_Activity,Sleep_Quality,Region
+EMP0001,Medium,Depression,No,Decrease,1,Unsatisfied,1,Weekly,Good,Europe
+EMP0002,Medium,Anxiety,No,Increase,3,Satisfied,2,Weekly,Good,Asia
+EMP0003,Medium,Anxiety,No,No Change,4,Unsatisfied,5,None,Poor,North America
+EMP0004,High,Depression,Yes,Increase,3,Unsatisfied,3,None,Poor,Europe
+EMP0005,High,None,Yes,Decrease,3,Unsatisfied,3,Weekly,Average,North America
+EMP0006,High,None,No,Increase,5,Unsatisfied,1,None,Average,South America
+EMP0007,Low,Anxiety,Yes,Decrease,5,Neutral,3,Daily,Poor,Asia
+EMP0008,Medium,Depression,No,Decrease,5,Satisfied,4,None,Average,North America
+EMP0009,High,None,Yes,Decrease,2,Unsatisfied,4,Daily,Poor,Europe
+EMP0010,Low,Depression,Yes,Decrease,2,Neutral,1,Weekly,Poor,North America
+EMP0011,High,None,Yes,Decrease,4,Satisfied,2,Weekly,Average,Oceania
+EMP0012,Medium,None,Yes,No Change,4,Neutral,3,Weekly,Poor,Africa
+EMP0013,High,Depression,Yes,Decrease,2,Neutral,1,Weekly,Good,Europe
+EMP0014,Low,Anxiety,No,Decrease,2,Satisfied,5,Weekly,Poor,North America
+EMP0015,High,Anxiety,Yes,Decrease,5,Neutral,3,Weekly,Average,Oceania
+EMP0016,Low,Anxiety,No,No Change,5,Satisfied,4,Weekly,Average,Africa
+EMP0017,Medium,None,No,No Change,1,Satisfied,1,Weekly,Good,Africa
+EMP0018,Low,Burnout,Yes,Decrease,5,Neutral,5,Weekly,Good,Europe
+EMP0019,High,Anxiety,No,No Change,3,Satisfied,2,Weekly,Good,Oceania
+EMP0020,Medium,Anxiety,No,Decrease,4,Neutral,1,Daily,Average,South America
+EMP0021,Low,Burnout,No,Increase,2,Satisfied,1,Weekly,Poor,South America
+EMP0022,Medium,Depression,No,Decrease,3,Unsatisfied,4,Daily,Poor,North America
+EMP0023,Low,Depression,Yes,Increase,3,Satisfied,4,Daily,Average,Africa
+EMP0024,Low,Depression,No,No Change,2,Neutral,3,Weekly,Poor,Asia
+EMP0025,Low,Burnout,No,Increase,2,Neutral,4,Daily,Average,North America
+EMP0026,High,Burnout,No,No Change,4,Neutral,3,None,Good,South America
+EMP0027,High,None,No,Decrease,4,Unsatisfied,4,None,Poor,North America
+EMP0028,Low,Depression,No,No Change,4,Unsatisfied,4,None,Poor,Oceania
+EMP0029,High,Depression,Yes,Decrease,4,Satisfied,1,Daily,Poor,Europe
+EMP0030,High,Depression,Yes,No Change,3,Satisfied,1,Weekly,Poor,North America
+EMP0031,Low,Anxiety,Yes,No Change,5,Neutral,2,Weekly,Average,Asia
+EMP0032,Medium,Depression,No,Decrease,3,Satisfied,5,None,Average,North America
+EMP0033,Medium,Anxiety,Yes,Decrease,5,Satisfied,5,Daily,Good,North America
+EMP0034,Medium,Anxiety,Yes,No Change,5,Neutral,4,Daily,Average,North America
+EMP0035,Medium,Depression,No,No Change,1,Unsatisfied,3,Weekly,Average,Europe
+EMP0036,Low,None,Yes,No Change,1,Neutral,5,None,Poor,Europe
+EMP0037,Low,Depression,Yes,Decrease,5,Satisfied,3,None,Poor,Asia
+EMP0038,Low,None,Yes,Increase,2,Satisfied,5,Daily,Good,Asia
+EMP0039,Low,Anxiety,Yes,No Change,3,Neutral,1,Weekly,Average,Africa
+EMP0040,High,None,No,Increase,1,Unsatisfied,5,Weekly,Poor,Asia
+EMP0041,High,Burnout,No,Decrease,1,Neutral,5,Daily,Poor,Europe
+EMP0042,Low,None,No,No Change,1,Unsatisfied,5,None,Good,North America
+EMP0043,High,None,Yes,Increase,3,Unsatisfied,3,Weekly,Poor,Europe
+EMP0044,Medium,Depression,Yes,No Change,1,Unsatisfied,3,None,Average,Europe
+EMP0045,High,Anxiety,Yes,No Change,5,Neutral,2,Daily,Good,South America
+EMP0046,Medium,Burnout,No,No Change,2,Neutral,3,Daily,Poor,North America
+EMP0047,Medium,Burnout,Yes,Decrease,1,Unsatisfied,5,Weekly,Good,South America
+EMP0048,High,None,No,Decrease,1,Unsatisfied,4,None,Good,Oceania
+EMP0049,Low,None,No,Increase,2,Neutral,3,Daily,Poor,Africa
+EMP0050,Medium,Burnout,No,No Change,1,Satisfied,3,None,Average,Europe
+EMP0051,High,Anxiety,Yes,Decrease,5,Satisfied,4,Daily,Good,Europe
+EMP0052,Low,None,No,Decrease,4,Satisfied,1,None,Good,South America
+EMP0053,Medium,None,No,Decrease,2,Satisfied,2,Daily,Good,South America
+EMP0054,Medium,Depression,Yes,No Change,1,Neutral,1,None,Average,Asia
+EMP0055,Medium,Burnout,Yes,Decrease,4,Satisfied,1,Daily,Poor,Asia
+EMP0056,Low,Anxiety,No,Increase,3,Neutral,5,Daily,Good,Africa
+EMP0057,Low,Depression,Yes,Increase,4,Neutral,5,None,Good,Asia
+EMP0058,Low,None,No,No Change,4,Satisfied,3,None,Average,South America
+EMP0059,Low,None,No,Decrease,2,Unsatisfied,3,Daily,Average,Oceania
+EMP0060,Medium,None,Yes,No Change,1,Satisfied,5,Daily,Poor,Oceania
+EMP0061,Medium,Depression,Yes,No Change,1,Unsatisfied,2,Daily,Good,Europe
+EMP0062,Medium,Depression,Yes,Increase,5,Unsatisfied,5,Daily,Good,North America
+EMP0063,Medium,Depression,No,No Change,3,Satisfied,2,None,Poor,Asia
+EMP0064,Medium,Depression,Yes,No Change,2,Satisfied,5,None,Good,South America
+EMP0065,Medium,Burnout,No,No Change,2,Unsatisfied,2,None,Good,Oceania
+EMP0066,Medium,Anxiety,Yes,Increase,4,Satisfied,4,Weekly,Poor,Europe
+EMP0067,Medium,Burnout,No,Increase,3,Satisfied,2,Daily,Good,Oceania
+EMP0068,High,None,Yes,Decrease,3,Unsatisfied,4,Weekly,Poor,Oceania
+EMP0069,High,Anxiety,Yes,Decrease,3,Neutral,1,Daily,Average,South America
+EMP0070,Low,None,No,No Change,5,Neutral,1,Daily,Good,North America
+EMP0071,Medium,Anxiety,No,Increase,4,Satisfied,1,Weekly,Average,North America
+EMP0072,Medium,Depression,Yes,No Change,2,Neutral,2,Weekly,Average,Oceania
+EMP0073,High,Burnout,Yes,No Change,2,Unsatisfied,1,Weekly,Good,Africa
+EMP0074,High,Anxiety,Yes,Decrease,1,Neutral,1,None,Poor,Africa
+EMP0075,Medium,Burnout,No,No Change,3,Neutral,3,Weekly,Poor,Africa
+EMP0076,High,Anxiety,Yes,No Change,4,Satisfied,3,None,Good,Asia
+EMP0077,High,Depression,No,No Change,1,Unsatisfied,2,Weekly,Good,Europe
+EMP0078,Medium,Anxiety,Yes,No Change,1,Satisfied,1,Daily,Average,South America
+EMP0079,High,Burnout,Yes,Increase,2,Neutral,1,Daily,Average,South America
+EMP0080,Low,Burnout,No,No Change,4,Unsatisfied,3,Weekly,Average,Asia
+EMP0081,High,Burnout,No,Decrease,4,Satisfied,4,None,Poor,Asia
+EMP0082,High,Depression,Yes,Increase,3,Neutral,2,Daily,Poor,South America
+EMP0083,High,Depression,Yes,Increase,5,Unsatisfied,2,Weekly,Good,North America
+EMP0084,High,Burnout,Yes,Increase,5,Unsatisfied,3,None,Poor,Europe
+EMP0085,Low,None,Yes,Decrease,2,Unsatisfied,5,None,Good,Oceania
+EMP0086,Low,Burnout,No,No Change,2,Unsatisfied,4,Daily,Poor,Asia
+EMP0087,Low,Anxiety,No,Decrease,1,Satisfied,1,Weekly,Poor,North America
+EMP0088,Medium,None,Yes,Increase,2,Unsatisfied,2,Weekly,Poor,Africa
+EMP0089,High,Anxiety,Yes,Increase,5,Neutral,2,None,Poor,North America
+EMP0090,Low,Depression,Yes,Increase,5,Unsatisfied,4,Daily,Poor,Oceania
+EMP0091,Medium,Depression,No,No Change,4,Unsatisfied,2,Weekly,Average,Africa
+EMP0092,High,Burnout,No,Decrease,3,Satisfied,5,Weekly,Good,South America
+EMP0093,Medium,Burnout,No,Increase,3,Satisfied,5,None,Poor,Asia
+EMP0094,High,Depression,Yes,Decrease,2,Satisfied,4,None,Average,Europe
+EMP0095,High,None,No,Decrease,2,Neutral,4,Weekly,Average,Africa
+EMP0096,Low,Burnout,No,Decrease,1,Satisfied,3,None,Good,Asia
+EMP0097,High,Burnout,No,Decrease,5,Neutral,5,Weekly,Poor,Africa
+EMP0098,Low,Burnout,No,Increase,4,Neutral,3,Weekly,Average,South America
+EMP0099,Low,Burnout,No,No Change,4,Satisfied,5,Daily,Good,Asia
+EMP0100,Medium,None,No,Decrease,3,Satisfied,4,Daily,Good,Africa

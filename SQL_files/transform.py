@@ -1,10 +1,8 @@
 # This file should take the cvs data and convert it into a database, or .db file
 # performs the CREATE from CRUD operations
-import sqlite3
 import csv
 import os
 from databricks import sql
-import pandas as pd
 from dotenv import load_dotenv
 
 
@@ -32,6 +30,7 @@ def transform_1(data1):
                     CREATE TABLE remote_health1 (
                         Employee_ID STRING,
                         Age INTEGER,
+                        Gender STRING,
                         Job_Role STRING,
                         Industry STRING,
                         Years_of_Experience INTEGER,
@@ -47,11 +46,11 @@ def transform_1(data1):
             c.execute(
                 """
                     INSERT INTO remote_health1 (
-                            Employee_ID, Age, Job_Role, Industry, Years_of_Experience, 
+                            Employee_ID, Age, Gender, Job_Role, Industry, Years_of_Experience, 
                             Work_Location, Hours_Worked_Per_Week, Number_of_Virtual_Meetings, 
                             Work_Life_Balance_Rating
                             ) 
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                 row,
             )

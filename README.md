@@ -1,5 +1,6 @@
 
 
+![alt text](make_test_results.png)
 
 # Python Script interacting with SQL Database
 #### The purpose of this project is to perform ETL functions on a csv file, connect to an external database (databricks), and perform a complex query that includes joins, aggregation, and sorting
@@ -33,10 +34,6 @@
         - complex_query.py
         - extract.py
         - transform.py
-    - tests
-        - test_extract.py
-        - test_query.py
-        - test_transform.py
     - main.py
     - Makefile
     - query_log.md (markdown that logs all queries made)
@@ -74,7 +71,7 @@ ___
 ![alt text](query_result.png)
 
 ### Integrating CLI Tools 
-##### To make this project accessible from the terminal, I created a Command Line Tool (CLI) to be able to run the project with simple commands. In the main.py file, I utilized the argparse package to create the CLI, which lets the user choose between three actions: "extract," "transform," and "complex_query." The arguments function parses the CLI arguments, with the "complex_query" action requiring an additional query argument. This is where you would input any query of your choice into the makefile. The main function executes the appropriate action based on the user's input: extracting data, transforming data, or running a complex query. Depending on the action, it calls specific functions (extract_data, transform_1, transform_2, complex_query). Finally, the script runs the main function if executed as the main module
+##### To make this project accessible from the terminal, I created a Command Line Tool (CLI) to be able to run the project with simple commands. In the main.py file, I utilized the argparse package to create the CLI, which lets the user choose between three actions: "extract," "transform," and "complex_query." The arguments function parses the CLI arguments, with the "complex_query" action requiring an additional query argument. This is where you would input any query of your choice into the makefile. The main function executes the appropriate action based on the user's input: extracting data, transforming data, or running a complex query. Depending on the action, it calls specific functions (extract_data, transform_1, transform_2, complex_query). Finally, the script runs the main function if executed as the main module.
 ___
 ### Arch Diagram 
 ##### The following diagram displays the map of how ETL processes work. [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query For the ETL-Query lab
