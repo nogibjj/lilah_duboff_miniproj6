@@ -57,7 +57,7 @@
 - databricks-sql-connector == 3.4.0
 ---
 ### What is the Purpose of this Project?
-##### The purpise of this project is to perform and ETL and a complex query by connecting to an external database. To set up data for the join, I downloaded a public dataset from Kaggle, that collected information about remote work and its impacts on mental health conditions and stress levels. I split this data into two separate files, one with demographics and job information, and one with the health statistics collected. The data was then passed as a url through an extract function to return two file paths. 
+##### The purpose of this project is to perform an ETL and a complex query by connecting to an external database. To set up data for the join, I downloaded a public dataset from Kaggle, that collected information about remote work and its impacts on mental health conditions and stress levels. I split this data into two separate files, one with demographics and job information, and one with the health statistics collected. The data was then passed as a url through an extract function to return two file paths. 
 
 ##### Next, a connection with the databricks warehouse was established, and the data was transformed/cleaned and loaded as two tables (remote_health1 and remote_health2) into the database. 
 
