@@ -1,4 +1,4 @@
-
+[![Python Application Test with Github Actions](https://github.com/nogibjj/lilah_duboff_miniproj6/actions/workflows/main.yml/badge.svg)](https://github.com/nogibjj/lilah_duboff_miniproj6/actions/workflows/main.yml)
 
 ![alt text](make_test_results.png)
 
@@ -13,7 +13,7 @@
 - [X] CI/CD pipeline
 - [X] Written or video explanation of the query
 - [X] README.md
-- [X] Potentially use CLI
+- [X] Use CLI
 
 
 ---
@@ -34,8 +34,11 @@
         - complex_query.py
         - extract.py
         - transform.py
+    - ETL_complex_diagram (arch diagram screenshot)
     - main.py
+    - make_test_results (screenshot of local tests)
     - Makefile
+    - query_image.png (screenshot of .md log results)
     - query_log.md (markdown that logs all queries made)
     - README.md
     - requirements.txt
@@ -74,7 +77,7 @@ ___
 ##### To make this project accessible from the terminal, I created a Command Line Tool (CLI) to be able to run the project with simple commands. In the main.py file, I utilized the argparse package to create the CLI, which lets the user choose between three actions: "extract," "transform," and "complex_query." The arguments function parses the CLI arguments, with the "complex_query" action requiring an additional query argument. This is where you would input any query of your choice into the makefile. The main function executes the appropriate action based on the user's input: extracting data, transforming data, or running a complex query. Depending on the action, it calls specific functions (extract_data, transform_1, transform_2, complex_query). Finally, the script runs the main function if executed as the main module.
 ___
 ### Arch Diagram 
-##### The following diagram displays the map of how ETL processes work. [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query For the ETL-Query lab
-![alt text](<ETL_diagram copy.png>)
+##### The following diagram displays a flowchart of how ETL process works in this project. As explained above, the data is extracted from an external source (GitHub url), then transformed. The transform function connects to an external database/warehouse in databricks, and the payload from the csv files are loaded into two tables. Finally, a CLI tool performs a complex query to join the two tables, find the averages of hours worked per week based on stress level, and groups and sort the data by employee ID and industry. The results are displayed in a generated markdown file titled query_log.md.
+![alt text](ETL_complex_diagram.png)
 
 
